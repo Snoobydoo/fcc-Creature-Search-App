@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h1>RPG Creature Search App</h1>
+      <div id="app">
+        <div id="search-wrap">
+          <input id="search-input" required/>
+          <button id="search-button">Search</button>
+        </div>
+        <div id="creature-wrap" class="hidden">
+          <h2 id="creature-name" class="stat-line"></h2>
+          <p id="creature-id" class="stat-line"></p>
+          <p class="stat-line">
+            <span class="stat type">Weight:</span>
+            <span id="weight" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Height:</span>
+            <span id="height" class="stat content"></span>
+          </p>
+          <div class="stat-line">
+            <span class="stat type">Types:</span>
+            <span id="types" class="stat content"></span>
+          </div>
+          <p class="stat-line">
+            <span class="stat type">HP:</span>
+            <span id="hp" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Attack:</span>
+            <span id="attack" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Defense:</span>
+            <span id="defense" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Special Attack</span>
+            <span id="special-attack" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Special Defense:</span>
+            <span id="special-defense" class="stat content"></span>
+          </p>
+          <p class="stat-line">
+            <span class="stat type">Speed:</span>
+            <span id="speed" class="stat content"></span>
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

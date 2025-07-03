@@ -1,0 +1,143 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #1e1e2f;
+  color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+header,
+footer {
+  height: 40px;
+}
+
+
+main {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: #ffdd57;
+}
+
+
+#search-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#search-input {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  width: 60%;
+  font-size: 1rem;
+}
+
+#search-button {
+  padding: 0.5rem 1rem;
+  background-color: #ffdd57;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+#search-button:hover {
+  background-color: #e6c74c;
+}
+
+
+#creature-wrap {
+  background-color: #2d2d44;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(255, 221, 87, 0.2);
+  text-align: left;
+}
+
+.hidden {
+  display: none;
+}
+
+.stat-line {
+  margin: 0.5rem 0;
+}
+
+.stat.type {
+  font-weight: bold;
+  color: #ffdd57;
+  margin-right: 0.5rem;
+}
+
+.stat.content {
+  color: #ffffff;
+}
+
+
+#types span {
+  display: inline-block;
+  background-color: #444;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+/* Optional: unique colors per type */
+#types .fire { background-color: #f08030; }
+#types .water { background-color: #6890f0; }
+#types .grass { background-color: #78c850; }
+#types .electric { background-color: #f8d030; }
+#types .ice { background-color: #98d8d8; }
+#types .psychic { background-color: #f85888; }
+#types .dragon { background-color: #7038f8; }
+#types .dark { background-color: #705848; }
+#types .fairy { background-color: #ee99ac; }
+#types .normal { background-color: #a8a878; }
+#types .fighting { background-color: #c03028; }
+#types .flying { background-color: #a890f0; }
+#types .poison { background-color: #a040a0; }
+#types .ground { background-color: #e0c068; }
+#types .rock { background-color: #b8a038; }
+#types .bug { background-color: #a8b820; }
+#types .ghost { background-color: #705898; }
+#types .steel { background-color: #b8b8d0; }
+
+@media (max-width: 500px) {
+  #search-wrap {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  #search-input {
+    width: 100%;
+  }
+
+  #search-button {
+    width: 100%;
+  }
+
+  #creature-wrap {
+    padding: 1rem;
+  }
+}
